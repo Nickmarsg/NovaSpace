@@ -61,6 +61,19 @@ on conflict (service_id, resource_id) do update set
   capacity_usage = excluded.capacity_usage;
 
 update public.services
+set buffer_before_minutes = 0,
+    buffer_after_minutes = 0
+where slug in (
+  'vr-30',
+  'vr-60',
+  'vr-90',
+  'ps5-60-1',
+  'ps5-60-2',
+  'ps5-120-1',
+  'ps5-120-2'
+);
+
+update public.services
 set duration_minutes = 180,
     buffer_before_minutes = 0,
     buffer_after_minutes = 0,
