@@ -39,7 +39,7 @@ export const studioLandingPages = [
     ],
     stats: [
       { label: "Оренда", value: "600 грн/год" },
-      { label: "Графік", value: "10-21" },
+      { label: "Графік", value: "Щодня, крім середи · 11-20" },
       { label: "Місто", value: "Бровари" }
     ],
     faq: [
