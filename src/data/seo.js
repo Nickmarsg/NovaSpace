@@ -317,9 +317,9 @@ export const novaVrSchema = {
   openingHoursSpecification: [
     {
       "@type": "OpeningHoursSpecification",
-      dayOfWeek: week,
-      opens: "10:00",
-      closes: "21:00"
+      dayOfWeek: week.filter((day) => day !== "Wednesday"),
+      opens: "11:00",
+      closes: "20:00"
     }
   ],
   areaServed: [
@@ -375,9 +375,9 @@ export const novaPhotoStudioSchema = {
   openingHoursSpecification: [
     {
       "@type": "OpeningHoursSpecification",
-      dayOfWeek: week,
-      opens: "10:00",
-      closes: "21:00"
+      dayOfWeek: week.filter((day) => day !== "Wednesday"),
+      opens: "11:00",
+      closes: "20:00"
     }
   ],
   areaServed: [

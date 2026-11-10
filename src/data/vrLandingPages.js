@@ -38,7 +38,7 @@ export const vrLandingPages = [
     ],
     stats: [
       { label: "VR-зон", value: "6" },
-      { label: "Графік", value: "10-21" },
+      { label: "Графік", value: "Щодня, крім середи · 11-20" },
       { label: "Місто", value: "Бровари" }
     ],
     faq: [

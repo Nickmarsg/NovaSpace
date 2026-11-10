@@ -356,7 +356,7 @@ const auditPage = async (path) => {
     assert(html.includes("/studio/studio-hero-floral-640.webp 640w"), `${path} should expose the mobile studio hero srcset`);
     assert(html.includes("/studio/studio-cozy-zone-bright-900.webp"), `${path} should use the brighter second studio tile image`);
     assert(!html.includes("/studio/studio-hero.png"), `${path} should not reference the old heavy studio hero PNG`);
-    assert(!html.includes("10:00-21:00"), `${path} should show the short 10-21 schedule`);
+    assert(!html.includes("10:00-21:00"), `${path} should not show the obsolete opening hours`);
   }
   if (path === "/vr/") {
     assert(html.includes('id="booking"') && html.includes("data-booking-widget"), `${path} is missing the local VR booking widget`);
